@@ -1,0 +1,23 @@
+.root {
+  @apply flex flex-col w-full;
+}
+
+.tabs-list {
+  @apply flex flex-shrink justify-start h-9 p-1 items-center;
+}
+
+.tabs-trigger {
+  @apply flex flex-1 h-10 items-center justify-center select-none border-b-2;
+
+  :hover {
+    @apply text-text-light;
+  }
+
+  &[data-state="active"] {
+    @apply text-text-dark border-primary;
+  }
+}
+
+.tabs-content {
+  @apply flex-grow p-5 mt-2 bg-white;
+}
